@@ -1,0 +1,124 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 50px 10px 50px;
+}
+
+.logo>p{
+    border: 1px solid lightseagreen;
+    background-color: lightseagreen;
+    border-radius: 1000px;
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px 0px 0px ;
+    margin-right: 10px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    width: 100%;
+
+}
+
+.logo{
+    display: flex;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(75, 73, 73);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: lightseagreen;
+}
+
+/* first */
+.virtual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    border: 1px solid lightseagreen;
+    border-radius: 1000px;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: lightseagreen;
+}
+
+.service>button{
+    margin-top: 60px;
+    background-color: white;
+    color: lightseagreen;
+}
+.virtual>div>div>button{
+    margin-top: 40px;
+    background-color: white;
+    color: lightseagreen;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.pservice{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+hr{
+    width: 50px;
+    border: 2px solid lightseagreen;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/image.png);
+    background-size: contain;
+}
+.card{
+    border:1px solid rgb(245, 239, 239);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(215, 216, 224);
+    margin: 20px 20px 20px 20px;
+    padding: 30px 20px 40px 20px;
+    width: auto;
+}
+p{
+    color: gray;
+}
