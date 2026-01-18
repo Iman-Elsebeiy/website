@@ -19,6 +19,7 @@
     padding: 10px 0px 0px 0px ;
     margin-right: 10px;
 }
+
 nav{
     display: flex;
     justify-content: center;
@@ -74,7 +75,7 @@ button:hover{
 }
 
 .service>button{
-    margin-top: 60px;
+    margin-top: 50px;
     background-color: white;
     color: lightseagreen;
 }
@@ -120,5 +121,77 @@ hr{
     width: auto;
 }
 p{
-    color: gray;
+  color: gray;
+  width: auto;
+}
+.article_cards{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.article_card{
+    border:1px solid rgb(245, 239, 239);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(215, 216, 224);
+    margin: 20px 20px 20px 20px;
+    padding: 0px 0px 40px 0px;
+    width: auto;
+}
+.article_card>div{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 20px;
+    width: auto;
+
+}
+.article_card>img{
+   border:1px solid rgb(245, 239, 239);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.customers{
+    color: aliceblue;
+    background-color:#5A98F2;
+    border:1px solid rgb(245, 239, 239);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(215, 216, 224);
+    margin: 60px 20px 20px 20px;
+    padding: 20px 10px 40px 20px;
+    width: auto;
+}
+
+.customer{
+    display: flex;
+    gap: 100px;
+    padding: 40px 40px 40px 40px;
+}
+
+.customer_head{
+    text-align: center;
+}
+.customer>img{
+    border:1px solid rgb(245, 239, 239);
+    border-radius: 999px;
+}
+.p_test{
+    color: aliceblue;
+}
+.test{
+    display: flex;
+    gap: 20px;
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    color: aliceblue;
+    background-color: #5A98F2;
+    border:1px solid rgb(245, 239, 239);
+    box-shadow: 0 0 15px rgb(215, 216, 224);
+    margin-top: 60px;
+    padding: 100px 100px 100px 200px;
+    width: 100%;
 }
