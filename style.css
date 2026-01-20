@@ -51,11 +51,14 @@ header>img{
 }
 
 .virtual h1, .service h1{
-    font-size: 60px;
+    font-size: 50px;
 }
 
-.virtual h2, .service h2{
-    font-size: 30px;
+.virtual h3, .service h3{
+    font-size: 26px;
+}
+.service h2{
+    font-size: 20px;
 }
 
 nav ul{
