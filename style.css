@@ -4,19 +4,22 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 50px 10px 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.logo>p{
-    border: 1px solid lightseagreen;
-    background-color: lightseagreen;
-    border-radius: 1000px;
-    width: 40px;
+.logo_p{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 60%;
+    letter-spacing: 0%;
+    border: 1px solid #458FF6;
+    background-color: #458FF6;
+    border-radius: 999px;
+    width: 43px;
     height: 30px;
     color: white;
-    font-size: large;
-    font-weight: bold;
     text-align: center;
-    padding: 10px 0px 0px 0px ;
+    padding: 18px 0px 0px 0px ;
     margin-right: 10px;
 }
 
@@ -24,14 +27,35 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 400px;
+    gap: 350px;
     width: 100%;
-
+}
+header>img{
+    margin: -100px;
+    width: 50px;
+    /* z-index: -1; */
 }
 
 .logo{
     display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.logo>h1,.logo_foot>h1{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.virtual h1, .service h1{
+    font-size: 60px;
+}
+
+.virtual h2, .service h2{
+    font-size: 30px;
 }
 
 nav ul{
@@ -42,13 +66,20 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(75, 73, 73);
-    font-weight: bold;
-}
+    color: #7D7987;
+    /* color: #1F1534; */
+    /* font-weight: bold; */
 
+}
+.active{
+    color: #1F1534;
+    font-weight: 700;
+    font-size: 18px;
+}
 nav ul li a:hover{
     color: lightseagreen;
 }
+
 
 /* first */
 .virtual{
@@ -56,41 +87,47 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     gap: 200px;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 button{
     margin-top: 30px;
     padding: 10px 20px;
-    background-color: lightseagreen;
-    border: 1px solid lightseagreen;
+    background-color: #458FF6;
+    border: 1px solid #458FF6;
     border-radius: 1000px;
-    width: fit-content;
+    width: 200px;
     color: white;
+    height: 58px;
     font-weight: bold;
+    font-size: 18px;
     cursor: pointer;
 }
 button:hover{
     background-color: white;
-    color: lightseagreen;
+    color: #458FF6;
 }
 
-.service>button{
+.service>button,.virtual>div>div>button{
     margin-top: 50px;
     background-color: white;
-    color: lightseagreen;
+    color: #458FF6;
 }
-.virtual>div>div>button{
-    margin-top: 40px;
-    background-color: white;
-    color: lightseagreen;
+.service>button:hover,.virtual>div>div>button:hover{
+    margin-top: 50px;
+    background-color:#458FF6;
+    color: white;
 }
-
+.virtual>div>hr{
+    margin-right:100% ;
+}
 .service{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 100%;
 }
 .pservice{
@@ -101,17 +138,20 @@ button:hover{
 
 hr{
     width: 50px;
-    border: 2px solid lightseagreen;
+    border: 1.5px solid #000000;
     margin-bottom: 20px;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(imgs/image.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
+
 .card{
     border:1px solid rgb(245, 239, 239);
     border-radius: 20px;
@@ -119,13 +159,17 @@ hr{
     margin: 20px 20px 20px 20px;
     padding: 30px 20px 40px 20px;
     width: auto;
+    height: 250px;
+}
+
+.card>img{
+    width: fit-content;
 }
 p{
-  color: gray;
+  color: #7D7987;
   width: auto;
 }
 .article_cards{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,15 +195,24 @@ p{
     border-radius: 20px 20px 0 0;
     width: 100%;
 }
+.article_card>div>a{
+    color: #4089ED;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
 .customers{
-    color: aliceblue;
+    color: #FFFFFF;
     background-color:#5A98F2;
     border:1px solid rgb(245, 239, 239);
     border-radius: 20px;
     box-shadow: 0 0 15px rgb(215, 216, 224);
-    margin: 60px 20px 20px 20px;
+    margin: 100px 20px 20px 20px;
     padding: 20px 10px 40px 20px;
     width: auto;
+}
+.customer_head>hr{
+    border: 1.5px solid #FFFFFF;
 }
 
 .customer{
@@ -175,9 +228,7 @@ p{
     border:1px solid rgb(245, 239, 239);
     border-radius: 999px;
 }
-.p_test{
-    color: aliceblue;
-}
+
 .test{
     display: flex;
     gap: 20px;
@@ -186,12 +237,47 @@ p{
 footer{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 100px;
     color: aliceblue;
     background-color: #5A98F2;
     border:1px solid rgb(245, 239, 239);
     box-shadow: 0 0 15px rgb(215, 216, 224);
-    margin-top: 60px;
-    padding: 100px 100px 100px 200px;
-    width: 100%;
+    margin-top: 100px;
+    padding: 100px 100px 100px 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* width: 100%; */
 }
+
+footer>div>div>a,.p_test{
+    text-decoration: none;
+    color: rgb(234, 233, 233);
+    font-weight: bold;
+}
+
+.logo_foot{
+    display: flex;
+    align-items: center;
+}
+.logo_foot>.logo_p{
+    border: 1px solid white;
+    background-color: white;
+    color: #458FF6;
+}
+footer>div>p,.p_t{
+    color: rgb(234, 233, 233);
+}
+.part_foot{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.foot_a{
+    font-weight: 300;
+}
+
+/* .dots{
+    margin-bottom: 0;
+    width: 20px;
+} */
